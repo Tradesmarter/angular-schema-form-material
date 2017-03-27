@@ -2,7 +2,7 @@
   "name": "angular-schema-form-material",
   "version": "1.0.0-alpha.2",
   "description": "Angular Material decorator for Angular Schema Form",
-  "main": "dist/material-decorator.js",
+  "main": "dist/angular-schema-form-material.js",
   "scripts": {
     "build": "webpack",
     "dist": "webpack --config webpack.config.dist.js",
@@ -52,5 +52,8 @@
     "uglify-js": "^2.6.2",
     "webpack": "^2.1.0-beta.28",
     "webpack-dev-server": "^2.1.0-beta.12"
+  },
+  "peerDependencies": {
+    "angular-schema-form": "^0.8.13"
   }
 }

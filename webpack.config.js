@@ -28,7 +28,7 @@ const plugins = [
 module.exports = {
   entry: {
     'angular-schema-form-material': [ path.join(__dirname, 'src', 'module') ],
-    'angular-schema-form-material-bundled': [ 'angular-schema-form', path.join(__dirname, 'src', 'module') ],
+    // 'angular-schema-form-material-bundled': [ 'angular-schema-form', path.join(__dirname, 'src', 'module') ],
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -39,7 +39,6 @@ module.exports = {
     modules: [
       path.join(__dirname, "src"),
       path.join(__dirname, "src", "material"),
-      path.join(__dirname, "..", "angular-schema-form", "dist"),
       'node_modules',
     ],
     extensions: [ '.js', '.html' ]
