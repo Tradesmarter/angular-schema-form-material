@@ -73,7 +73,7 @@ function materialDecoratorConfig(
     'default': { template: defaultTemplate, builder: defaults },
     fieldset: { template: fieldsetTemplate, builder: [ sfField, simpleTransclusion, condition ] },
     help: { template: helpTemplate, builder: defaults },
-    number: { template: defaultTemplate, builder: defaults.concat(numeric) },
+    // number: { template: defaultTemplate, builder: defaults.concat(numeric) },
     password: { template: defaultTemplate, builder: defaults },
     radios: { template: radiosTemplate, builder: defaults },
     'radios-inline': { template: radiosInlineTemplate, builder: defaults },
