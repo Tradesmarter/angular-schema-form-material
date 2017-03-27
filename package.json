@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dist": "webpack --config webpack.config.dist.js",
+    "prepublish": "npm run build",
     "watch": "webpack --watch",
     "test": "echo \"Error: test not currently available\" && exit 1",
     "test-me": "karma start --log-level debug"
@@ -22,6 +23,7 @@
     "angular": ">= 1.2",
     "angular-messages": "^1.5.0",
     "angular-sanitize": ">= 1.2",
+    "angular-schema-form": "^0.8.13",
     "tv4": "~1.0.15"
   },
   "devDependencies": {
@@ -52,8 +54,5 @@
     "uglify-js": "^2.6.2",
     "webpack": "^2.1.0-beta.28",
     "webpack-dev-server": "^2.1.0-beta.12"
-  },
-  "peerDependencies": {
-    "angular-schema-form": "^0.8.13"
   }
 }
