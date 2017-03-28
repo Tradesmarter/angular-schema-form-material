@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 28 Mar 2017 07:33:36 GMT
+ * @date Tue, 28 Mar 2017 08:16:14 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
