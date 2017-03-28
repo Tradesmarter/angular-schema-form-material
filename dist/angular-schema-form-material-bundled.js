@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 28 Mar 2017 10:12:30 GMT
+ * @date Tue, 28 Mar 2017 10:47:23 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -142,7 +142,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/card-content.html';
-var html = "<md-card-content class=\"schema-form-card-content {{form.htmlClass}}\">\n</md-card-content>\n";
+var html = "<md-card-content class=\"schema-form-card-content {{form.htmlClass}}\" sf-layout>\n</md-card-content>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
@@ -453,7 +453,7 @@ function materialDecoratorConfig(
     section: { template: __WEBPACK_IMPORTED_MODULE_13__material_section_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     card: { template: __WEBPACK_IMPORTED_MODULE_14__material_card_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     'card-content': { template: __WEBPACK_IMPORTED_MODULE_15__material_card_content_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
-    'card-title': { template: __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default.a, builder: [ sfField, condition, sfLayout ] },
+    'card-title': { template: __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default.a, builder: [ sfField, simpleTransclusion, condition ] },
     select: { template: __WEBPACK_IMPORTED_MODULE_17__material_select_html___default.a, builder: defaults.concat(sfOptions) },
     submit: { template: __WEBPACK_IMPORTED_MODULE_4__material_submit_html___default.a, builder: defaults },
     tabs: { template: __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
