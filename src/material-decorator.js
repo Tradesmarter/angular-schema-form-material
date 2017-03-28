@@ -84,7 +84,7 @@ function materialDecoratorConfig(
     section: { template: sectionTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     card: { template: cardTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     'card-content': { template: cardContentTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
-    'card-title': { template: cardTitleTemplate, builder: [ sfField, simpleTransclusion, condition ] },
+    'card-title': { template: cardTitleTemplate, builder: [ sfField ] },
     select: { template: selectTemplate, builder: defaults.concat(sfOptions) },
     submit: { template: submitTemplate, builder: defaults },
     tabs: { template: tabsTemplate, builder: [ sfField, mdTabs, condition ] },
