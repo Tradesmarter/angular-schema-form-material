@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 28 Mar 2017 08:16:14 GMT
+ * @date Tue, 28 Mar 2017 08:35:55 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -142,7 +142,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/card.html';
-var html = "<md-card class=\"schema-form-card {{::form.htmlClass}}\" layout-wrap sf-layout>\n</md-card>\n";
+var html = "<md-card class=\"schema-form-card {{::form.htmlClass}}\" sf-layout>\n</md-card>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
