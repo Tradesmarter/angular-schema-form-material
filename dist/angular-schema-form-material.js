@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 28 Mar 2017 11:02:44 GMT
+ * @date Tue, 28 Mar 2017 11:09:22 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -151,7 +151,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/card-title.html';
-var html = "<md-card-title class=\"schema-form-card-title {{form.htmlClass}}\">\n  <md-card-title-text>\n    <span class=\"md-headline\">{{::form.title}}</span>\n    <span class=\"md-subhead\">{{::form.description}}</span>\n  </md-card-title-text>\n</md-card-title>\n";
+var html = "<md-card-title class=\"schema-form-card-title {{form.htmlClass}}\">\n  <md-card-title-text>\n    <span class=\"md-title\">{{::form.title}}</span>\n    <span class=\"md-subhead\">{{::form.description}}</span>\n  </md-card-title-text>\n</md-card-title>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
