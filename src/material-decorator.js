@@ -18,6 +18,7 @@ import radiobuttonsTemplate from './material/radio-buttons.html';
 import sectionTemplate from './material/section.html';
 import cardTemplate from './material/card.html';
 import cardContentTemplate from './material/card-content.html';
+import cardTitleTemplate from './material/card-title.html';
 import selectTemplate from './material/select.html';
 import submitTemplate from './material/submit.html';
 import switchTemplate from './material/switch.html';
@@ -83,6 +84,7 @@ function materialDecoratorConfig(
     section: { template: sectionTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     card: { template: cardTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     'card-content': { template: cardContentTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
+    'card-title': { template: cardTitleTemplate, builder: [ sfField, condition, sfLayout ] },
     select: { template: selectTemplate, builder: defaults.concat(sfOptions) },
     submit: { template: submitTemplate, builder: defaults },
     tabs: { template: tabsTemplate, builder: [ sfField, mdTabs, condition ] },

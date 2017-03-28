@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 28 Mar 2017 08:57:24 GMT
+ * @date Tue, 28 Mar 2017 09:00:31 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -346,17 +346,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_card_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__material_card_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_content_html__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_content_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__material_card_content_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_select_html__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__material_select_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_switch_html__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__material_switch_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_tabs_html__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_tabs_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabarray_html__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_tabarray_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_textarea_html__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_textarea_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_title_html__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__material_card_title_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__material_select_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_switch_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_tabs_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_textarea_html__);
 // ngtemplate-loader embeds the html on build
+
 
 
 
@@ -441,12 +444,13 @@ function materialDecoratorConfig(
     section: { template: __WEBPACK_IMPORTED_MODULE_13__material_section_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     card: { template: __WEBPACK_IMPORTED_MODULE_14__material_card_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     'card-content': { template: __WEBPACK_IMPORTED_MODULE_15__material_card_content_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
-    select: { template: __WEBPACK_IMPORTED_MODULE_16__material_select_html___default.a, builder: defaults.concat(sfOptions) },
+    'card-title': { template: __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default.a, builder: [ sfField, condition, sfLayout ] },
+    select: { template: __WEBPACK_IMPORTED_MODULE_17__material_select_html___default.a, builder: defaults.concat(sfOptions) },
     submit: { template: __WEBPACK_IMPORTED_MODULE_4__material_submit_html___default.a, builder: defaults },
-    tabs: { template: __WEBPACK_IMPORTED_MODULE_18__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
-    tabarray: { template: __WEBPACK_IMPORTED_MODULE_19__material_tabarray_html___default.a, builder: arrays },
-    textarea: { template: __WEBPACK_IMPORTED_MODULE_20__material_textarea_html___default.a, builder: defaults.concat(textarea) },
-    'switch': { template: __WEBPACK_IMPORTED_MODULE_17__material_switch_html___default.a, builder: defaults.concat(mdSwitch) }
+    tabs: { template: __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
+    tabarray: { template: __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default.a, builder: arrays },
+    textarea: { template: __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default.a, builder: defaults.concat(textarea) },
+    'switch': { template: __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default.a, builder: defaults.concat(mdSwitch) }
   });
 
   function sfLayout(args) {
@@ -897,6 +901,15 @@ module.exports = tv4;
 __webpack_require__(25);
 module.exports = __webpack_require__(3);
 
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+var path = '/material/card-title.html';
+var html = "<md-card-title class=\"schema-form-card-title {{form.htmlClass}}\">\n  <md-card-title-text>\n    <span class=\"md-headline\">{{::form.title}}</span>\n    <span class=\"md-subhead\">{{::form.description}}</span>\n  </md-card-title-text>\n</md-card-title>\n";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
 
 /***/ })
 /******/ ]);
