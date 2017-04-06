@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Thu, 06 Apr 2017 13:11:23 GMT
+ * @date Thu, 06 Apr 2017 14:33:01 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -169,7 +169,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/checkboxes.html';
-var html = "<div sf-array=\"form\" sf-field-model\n     class=\"schema-form-checkboxes {{::form.htmlClass}}\"\n     sf-messages>\n  <label class=\"control-label\" ng-show=\"showTitle()\">{{::form.title}}</label>\n  <div class=\"checkbox\" ng-repeat=\"val in titleMapValues track by $index\" >\n    <input type=\"checkbox\"\n             ng-disabled=\"form.readonly\"\n             sf-changed=\"form\"\n             class=\"{{form.fieldHtmlClass}}\"\n             ng-model=\"titleMapValues[$index]\"\n             name=\"{{form.key.slice(-1)[0]}}\" />\n    <!-- <md-checkbox ng-model=\"titleMapValues[$index]\"\n                 sf-changed=\"form\"\n                 ng-disabled=\"::form.readonly\"\n                 name=\"{{::form.key|sfCamelKey}}\"\n                 ng-true-value=\"true\"\n                 ng-false-value=\"false\"\n                 aria-label=\"{{::form.title}}\">\n      {{::form.titleMap[$index].name}}\n    </md-checkbox> -->\n  </div>\n</div>\n";
+var html = "<div sf-array=\"form\" sf-field-model\n     class=\"schema-form-checkboxes {{::form.htmlClass}}\"\n     sf-messages>\n  <label class=\"control-label\" ng-show=\"showTitle()\">{{::form.title}}</label>\n  <div class=\"checkbox\" ng-repeat=\"val in titleMapValues track by $index\" >\n    <md-checkbox ng-model=\"titleMapValues[$index]\"\n                 sf-changed=\"form\"\n                 ng-disabled=\"::form.readonly\"\n                 name=\"{{::form.key|sfCamelKey}}\"\n                 ng-true-value=\"true\"\n                 ng-false-value=\"false\"\n                 aria-label=\"{{::form.title}}\">\n      {{::form.titleMap[$index].name}}\n    </md-checkbox>\n  </div>\n</div>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
