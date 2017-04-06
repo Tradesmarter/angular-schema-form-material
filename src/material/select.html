@@ -1,7 +1,5 @@
 <md-input-container
-    class="form-group {{::form.htmlClass}} schema-form-select"
-    ng-class="{'has-error': hasError(), 'has-success': hasSuccess(), 'has-feedback': form.feedback !== false}"
-    sf-messages sf-layout>
+    class="form-group {{::form.htmlClass}} schema-form-select" sf-messages sf-layout>
   <label ng-show="::showTitle()">{{::form.title}}</label>
   <md-select sf-field-model schema-validate="form">
     <md-optgroup ng-repeat-start="(key, opt) in form.getOptions(form, evalExpr) | orderBy:'group' as optGroups"

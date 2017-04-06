@@ -1,10 +1,15 @@
 <div sf-array="form" sf-field-model
-     class="form-group schema-form-checkboxes {{::form.htmlClass}}"
-     ng-class="{'has-error': hasError(), 'has-success': hasSuccess()}"
+     class="schema-form-checkboxes {{::form.htmlClass}}"
      sf-messages>
   <label class="control-label" ng-show="showTitle()">{{::form.title}}</label>
   <div class="checkbox" ng-repeat="val in titleMapValues track by $index" >
-    <md-checkbox ng-model="titleMapValues[$index]"
+    <input type="checkbox"
+             ng-disabled="form.readonly"
+             sf-changed="form"
+             class="{{form.fieldHtmlClass}}"
+             ng-model="titleMapValues[$index]"
+             name="{{form.key.slice(-1)[0]}}" />
+    <!-- <md-checkbox ng-model="titleMapValues[$index]"
                  sf-changed="form"
                  ng-disabled="::form.readonly"
                  name="{{::form.key|sfCamelKey}}"
@@ -12,6 +17,6 @@
                  ng-false-value="false"
                  aria-label="{{::form.title}}">
       {{::form.titleMap[$index].name}}
-    </md-checkbox>
+    </md-checkbox> -->
   </div>
 </div>
