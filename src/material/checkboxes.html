@@ -10,7 +10,7 @@
                  ng-true-value="true"
                  ng-false-value="false"
                  aria-label="{{::form.title}}">
-      {{::form.titleMap[$index].name}}
+      <span ng-bind-html="::form.titleMap[$index].name"></span>
     </md-checkbox>
   </div>
 </div>
