@@ -14,4 +14,7 @@
                  ng-value="::opt.value"
                  ng-repeat-end>{{::opt.name}}</md-option>
   </md-select>
+  <div ng-messages="ngModel.$error">
+    <div sf-message ng-message></div>
+  </div>
 </md-input-container>
