@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Thu, 13 Apr 2017 08:00:07 GMT
+ * @date Tue, 25 Apr 2017 10:50:36 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -71,7 +71,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 31);
+/******/ 	return __webpack_require__(__webpack_require__.s = 32);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -105,9 +105,9 @@ module.exports = path;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(26);
 __webpack_require__(25);
 __webpack_require__(24);
-__webpack_require__(23);
 
 
 /***/ }),
@@ -186,13 +186,22 @@ module.exports = path;
 /* 12 */
 /***/ (function(module, exports) {
 
+var path = '/material/divider.html';
+var html = "<md-divider></md-divider>\n";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
 var path = '/material/fieldset.html';
 var html = "<fieldset ng-disabled=\"form.readonly\" class=\"standard {{form.htmlClass}}\" flex>\n  <legend ng-show=\"form.title\">{{ form.title }}</legend>\n</fieldset>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 var path = '/material/help.html';
@@ -201,7 +210,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 var path = '/material/radio-buttons.html';
@@ -210,7 +219,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports) {
 
 var path = '/material/radios-inline.html';
@@ -219,7 +228,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 var path = '/material/radios.html';
@@ -228,7 +237,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 var path = '/material/section.html';
@@ -237,7 +246,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 var path = '/material/select.html';
@@ -246,7 +255,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 var path = '/material/switch.html';
@@ -255,7 +264,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 var path = '/material/tabarray.html';
@@ -264,7 +273,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 var path = '/material/tabs.html';
@@ -273,7 +282,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 var path = '/material/textarea.html';
@@ -282,7 +291,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 angular.module('schemaForm').directive('sfMaterialClass', sfMaterialClassDirective);
@@ -318,7 +327,7 @@ function sfMaterialClassDirective($compile, $timeout) {
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -339,17 +348,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__material_date_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__material_date_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__material_default_html__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__material_default_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__material_default_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__material_fieldset_html__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__material_fieldset_html__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__material_fieldset_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__material_fieldset_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__material_help_html__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__material_help_html__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__material_help_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__material_help_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__material_radios_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_section_html__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_section_html__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_section_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__material_section_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_card_html__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_card_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__material_card_html__);
@@ -357,17 +366,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_content_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__material_card_content_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_title_html__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__material_card_title_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__material_select_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_switch_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_tabs_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_textarea_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_divider_html__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_divider_html__);
 // ngtemplate-loader embeds the html on build
+
 
 
 
@@ -459,7 +471,8 @@ function materialDecoratorConfig(
     tabs: { template: __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
     tabarray: { template: __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default.a, builder: arrays },
     textarea: { template: __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default.a, builder: defaults.concat(textarea) },
-    'switch': { template: __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default.a, builder: defaults.concat(mdSwitch) }
+    'switch': { template: __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
+    divider: { template: __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default.a, builder: defulats }
   });
 
   function sfLayout(args) {
@@ -712,7 +725,7 @@ function sfCamelKeyFilter() {
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 /**
@@ -765,12 +778,12 @@ angular.module('schemaForm').directive('sfTypeParser', function() {
 
 
 /***/ }),
-/* 26 */,
 /* 27 */,
 /* 28 */,
 /* 29 */,
 /* 30 */,
-/* 31 */
+/* 31 */,
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(3);
