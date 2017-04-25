@@ -94,7 +94,7 @@ function materialDecoratorConfig(
     textarea: { template: textareaTemplate, builder: defaults.concat(textarea) },
     'switch': { template: switchTemplate, builder: defaults.concat(mdSwitch) },
     divider: { template: dividerTemplate, builder: defaults },
-    div: { template: divTemplate, builder: simpleTransclusion, condition, sfLayout },
+    div: { template: divTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] }
   });
 
   function sfLayout(args) {
