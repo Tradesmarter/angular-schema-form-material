@@ -26,6 +26,7 @@ import tabsTemplate from './material/tabs.html';
 import tabarrayTemplate from './material/tabarray.html';
 import textareaTemplate from './material/textarea.html';
 import dividerTemplate from './material/divider.html';
+import divTemplate from './material/div.html';
 
 angular
   .module('schemaForm')
@@ -92,7 +93,8 @@ function materialDecoratorConfig(
     tabarray: { template: tabarrayTemplate, builder: arrays },
     textarea: { template: textareaTemplate, builder: defaults.concat(textarea) },
     'switch': { template: switchTemplate, builder: defaults.concat(mdSwitch) },
-    divider: { template: dividerTemplate, builder: defaults }
+    divider: { template: dividerTemplate, builder: defaults },
+    div: { template: divTemplate, builder: defaults },
   });
 
   function sfLayout(args) {

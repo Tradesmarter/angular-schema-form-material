@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 25 Apr 2017 10:54:59 GMT
+ * @date Tue, 25 Apr 2017 10:56:00 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -378,7 +378,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_textarea_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_divider_html__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_divider_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_div_html__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_div_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__material_div_html__);
 // ngtemplate-loader embeds the html on build
+
 
 
 
@@ -472,7 +475,8 @@ function materialDecoratorConfig(
     tabarray: { template: __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default.a, builder: arrays },
     textarea: { template: __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default.a, builder: defaults.concat(textarea) },
     'switch': { template: __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
-    divider: { template: __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default.a, builder: defaults }
+    divider: { template: __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default.a, builder: defaults },
+    div: { template: __WEBPACK_IMPORTED_MODULE_23__material_div_html___default.a, builder: defaults },
   });
 
   function sfLayout(args) {
@@ -923,6 +927,15 @@ module.exports = tv4;
 __webpack_require__(27);
 module.exports = __webpack_require__(3);
 
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+var path = '/material/div.html';
+var html = "<div class=\"{{::form.htmlClass}}\" sf-layout></div>\n";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
 
 /***/ })
 /******/ ]);
