@@ -92,7 +92,7 @@ function materialDecoratorConfig(
     tabarray: { template: tabarrayTemplate, builder: arrays },
     textarea: { template: textareaTemplate, builder: defaults.concat(textarea) },
     'switch': { template: switchTemplate, builder: defaults.concat(mdSwitch) },
-    divider: { template: dividerTemplate, builder: defulats }
+    divider: { template: dividerTemplate, builder: defaults }
   });
 
   function sfLayout(args) {

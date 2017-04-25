@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 25 Apr 2017 10:50:36 GMT
+ * @date Tue, 25 Apr 2017 10:54:59 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -472,7 +472,7 @@ function materialDecoratorConfig(
     tabarray: { template: __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default.a, builder: arrays },
     textarea: { template: __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default.a, builder: defaults.concat(textarea) },
     'switch': { template: __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
-    divider: { template: __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default.a, builder: defulats }
+    divider: { template: __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default.a, builder: defaults }
   });
 
   function sfLayout(args) {
