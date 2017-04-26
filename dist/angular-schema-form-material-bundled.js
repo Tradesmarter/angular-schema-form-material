@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 25 Apr 2017 11:12:08 GMT
+ * @date Wed, 26 Apr 2017 07:58:19 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -508,7 +508,7 @@ function materialDecoratorConfig(
   function sfMessagesBuilder(args) {
     var messagesDiv = args.fieldFrag.querySelector('[sf-messages]');
     if (messagesDiv && sfMessagesNode) {
-      var child = sfMessagesNode.cloneNode();
+      var child = sfMessagesNode.cloneNode(true);
       messagesDiv.appendChild(child);
     }
   };
