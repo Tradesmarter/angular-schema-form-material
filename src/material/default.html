@@ -1,5 +1,5 @@
 <md-input-container class="schema-form-{{::form.type}} {{::form.htmlClass}}"
-                    sf-messages sf-layout sf-material-class="md-input-has-value">
+                    sf-messages sf-layout sf-material-class="md-input-has-value" md-block>
   <label ng-show="showTitle()" for="{{::form.key|sfCamelKey}}">{{::form.title}}</label>
   <input sf-field-model
          ng-show="::form.key"
