@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Wed, 26 Apr 2017 09:35:18 GMT
+ * @date Wed, 26 Apr 2017 11:44:54 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -79,7 +79,7 @@
 /***/ (function(module, exports) {
 
 var path = '/material/default.html';
-var html = "<md-input-container class=\"schema-form-{{::form.type}} {{::form.htmlClass}}\"\n                    sf-messages sf-layout sf-material-class=\"md-input-has-value\" md-block>\n  <label ng-show=\"showTitle()\" for=\"{{::form.key|sfCamelKey}}\">{{::form.title}}</label>\n  <input sf-field-model\n         ng-show=\"::form.key\"\n         type=\"{{::form.type}}\"\n         step=\"any\"\n         sf-changed=\"form\"\n         placeholder=\"{{::form.placeholder}}\"\n         id=\"{{::form.key|sfCamelKey}}\"\n         ng-class=\"::form.fieldHtmlClass\"\n         sf-type-parser=\"form.schema\"\n         ng-disabled=\"::form.readonly\"\n         schema-validate=\"form\"\n         name=\"{{::form.key|sfCamelKey}}\"\n         aria-describedby=\"{{::form.key|sfCamelKey}}Status\" />\n</md-input-container>\n";
+var html = "<md-input-container class=\"{{::form.htmlClass}}\" sf-messages sf-layout sf-material-class=\"md-input-has-value\" md-block>\n  <label ng-show=\"showTitle()\" for=\"{{::form.key|sfCamelKey}}\">{{::form.title}}</label>\n  <input sf-field-model\n         ng-show=\"::form.key\"\n         type=\"{{::form.type}}\"\n         step=\"any\"\n         sf-changed=\"form\"\n         placeholder=\"{{::form.placeholder}}\"\n         id=\"{{::form.key|sfCamelKey}}\"\n         ng-class=\"::form.fieldHtmlClass\"\n         sf-type-parser=\"form.schema\"\n         ng-disabled=\"::form.readonly\"\n         schema-validate=\"form\"\n         name=\"{{::form.key|sfCamelKey}}\"\n         aria-describedby=\"{{::form.key|sfCamelKey}}Status\" />\n</md-input-container>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
@@ -502,7 +502,6 @@ function materialDecoratorConfig(
     var html = '<div ng-show="ngModel.$invalid" ng-messages="{dummy: true}"><div ng-message="dummy" sf-message="form.description"></div></div>';
 
     // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error"><div ng-repeat="(key, value) in ngModel.$error" sf-message="form.description" ng-message="{{key}}" class="md-input-message-animation"></div></div>';
-    // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error" class="ng-active">' + '<div ng-repeat="(key, value) in ngModel.$error" ng-message="{{key}}" class="md-input-message-animation" sf-message="form.description"></div></div>';
     var div = document.createElement('div');
     div.innerHTML = html;
     return div.firstChild;
