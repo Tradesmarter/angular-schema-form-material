@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Wed, 26 Apr 2017 07:59:47 GMT
+ * @date Wed, 26 Apr 2017 09:35:18 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -499,8 +499,10 @@ function materialDecoratorConfig(
   };
 
   function sfMessagesNodeHandler() {
-    // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error"><div sf-message ng-message></div></div>';
-    var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error" class="ng-active">' + '<div ng-repeat="(key, value) in ngModel.$error" ng-message="{{key}}" class="md-input-message-animation" sf-message="form.description"></div></div>';
+    var html = '<div ng-show="ngModel.$invalid" ng-messages="{dummy: true}"><div ng-message="dummy" sf-message="form.description"></div></div>';
+
+    // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error"><div ng-repeat="(key, value) in ngModel.$error" sf-message="form.description" ng-message="{{key}}" class="md-input-message-animation"></div></div>';
+    // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error" class="ng-active">' + '<div ng-repeat="(key, value) in ngModel.$error" ng-message="{{key}}" class="md-input-message-animation" sf-message="form.description"></div></div>';
     var div = document.createElement('div');
     div.innerHTML = html;
     return div.firstChild;

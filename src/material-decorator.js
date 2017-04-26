@@ -108,8 +108,9 @@ function materialDecoratorConfig(
   };
 
   function sfMessagesNodeHandler() {
-    // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error"><div sf-message ng-message></div></div>';
-    var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error" class="ng-active">' + '<div ng-repeat="(key, value) in ngModel.$error" ng-message="{{key}}" class="md-input-message-animation" sf-message="form.description"></div></div>';
+    var html = '<div ng-show="ngModel.$invalid" ng-messages="{dummy: true}"><div ng-message="dummy" sf-message="form.description"></div></div>';
+
+    // var html = '<div ng-show="ngModel.$invalid" ng-messages="ngModel.$error"><div ng-repeat="(key, value) in ngModel.$error" sf-message="form.description" ng-message="{{key}}" class="md-input-message-animation"></div></div>';
     var div = document.createElement('div');
     div.innerHTML = html;
     return div.firstChild;
