@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Thu, 27 Apr 2017 14:18:39 GMT
+ * @date Thu, 27 Apr 2017 14:42:17 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -241,7 +241,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/radios-multi-column.html';
-var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"md-body-1\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\">{{::form.title}}</label>\n  <br />\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout sf-messages>\n    <div ng-repeat=\"item in form.titleMap\" flex layout=\"row\" layout-padding layout-align=\"start center\" class=\"radio-buttons-row\"\n    md-colors=\"{\n      borderColor: 'default-background-500-0.3',\n      color: item.recommended ? 'default-accent-500' : 'default-background-500',\n      borderLeftColor: item.recommended ? 'default-accent-500' : 'default-background-500-0.3'\n    }\" ng-class=\"{'md-whiteframe-10dp': item.recommended}\">\n      <md-radio-button flex ng-value=\"item.value\" class=\"md-primary\">\n        <div class=\"md-caption\">{{::item.actionText}}</div>\n        <div class=\"md-title\">{{::item.name}}</div>\n      </md-radio-button>\n      <div flex layout=\"column\">\n        <div flex ng-repeat=\"description in item.descriptionList track by $index\">{{::description}}</div>\n      </div>\n      <div flex=\"none\" ng-if=\"::item.recommended\" class=\"{{::form.badgeClass}} md-caption\" md-colors=\"{background: 'default-accent-500'}\">\n        {{::form.badgeText}}\n      </div>\n    </div>\n  </md-radio-group>\n</div>\n";
+var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"md-body-1\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\">{{::form.title}}</label>\n  <br />\n  <br />\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout sf-messages>\n    <div ng-repeat=\"item in form.titleMap\" flex layout=\"row\" layout-padding layout-align=\"start center\" class=\"radio-buttons-row\"\n    md-colors=\"{\n      borderColor: 'default-background-500-0.3',\n      color: item.recommended ? 'default-accent-500' : 'default-background-500',\n      borderLeftColor: item.recommended ? 'default-accent-500' : 'default-background-500-0.3'\n    }\" ng-class=\"{'md-whiteframe-10dp': item.recommended}\">\n      <md-radio-button flex ng-value=\"item.value\" class=\"md-primary\">\n        <div class=\"md-caption\">{{::item.actionText}}</div>\n        <div class=\"md-title\">{{::item.name}}</div>\n      </md-radio-button>\n      <div flex layout=\"column\" class=\"md-caption\">\n        <div flex ng-repeat=\"description in item.descriptionList track by $index\">{{::description}}</div>\n      </div>\n      <div flex=\"none\" ng-if=\"::item.recommended\" class=\"{{::form.badgeClass}} md-caption\" md-colors=\"{background: 'default-accent-500'}\">\n        {{::form.badgeText}}\n      </div>\n    </div>\n  </md-radio-group>\n</div>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
