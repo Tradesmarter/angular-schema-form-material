@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Thu, 27 Apr 2017 08:47:21 GMT
+ * @date Thu, 27 Apr 2017 13:52:25 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -71,7 +71,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 34);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -105,9 +105,9 @@ module.exports = path;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(28);
 __webpack_require__(27);
 __webpack_require__(26);
-__webpack_require__(25);
 
 
 /***/ }),
@@ -240,13 +240,22 @@ module.exports = path;
 /* 18 */
 /***/ (function(module, exports) {
 
+var path = '/material/radios-multi-column.html';
+var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\" layout=\"row\">{{::form.title}}</label>\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout sf-messages>\n    <div ng-repeat=\"item in form.titleMap\" flex layout=\"row\" layout-padding layout-align=\"start center\" class=\"radio-buttons-row\" ng-class=\"{'md-whiteframe-8dp': item.recommended}\">\n      <md-radio-button flex ng-value=\"item.value\" class=\"md-primary\" >\n        <div class=\"md-caption\">{{::item.actionText}}</div>\n        <div>{{::item.name}}</div>\n      </md-radio-button>\n      <div flex layout=\"column\">\n        <div flex ng-repeat=\"description in item.descriptionList track by $index\">{{::description}}</div>\n      </div>\n      <div flex=\"none\" ng-if=\"::item.recommended\" class=\"{{::form.badgeClass}}\">\n        {{::form.badgeText}}\n      </div>\n    </div>\n  </md-radio-group>\n</div>\n";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
 var path = '/material/radios.html';
 var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\" layout=\"row\">{{form.title}} {{form.titleMap | json}}</label>\n  <div>\n    <md-radio-group sf-field-model\n                    sf-changed=\"form\"\n                    ng-disabled=\"form.readonly\"\n                    name=\"{{form.key.join('.')}}\"\n                    sf-layout sf-messages>\n      <md-radio-button ng-repeat=\"item in form.titleMap\"\n                       ng-value=\"item.value\"\n                       class=\"{{::form.fieldHtmlClass}}\"\n                       sf-field-model=\"ng-class\"\n                       ng-class=\"{ active: item.value === $$value$$ }\">\n        <span ng-bind-html=\"item.name\"></span>\n      </md-radio-button>\n    </md-radio-group>\n  </div>\n</div>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 var path = '/material/section.html';
@@ -255,7 +264,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 var path = '/material/select.html';
@@ -264,7 +273,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 var path = '/material/switch.html';
@@ -273,7 +282,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 var path = '/material/tabarray.html';
@@ -282,7 +291,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 var path = '/material/tabs.html';
@@ -291,7 +300,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 var path = '/material/textarea.html';
@@ -300,7 +309,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 angular.module('schemaForm').directive('sfMaterialClass', sfMaterialClassDirective);
@@ -336,7 +345,7 @@ function sfMaterialClassDirective($compile, $timeout) {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -361,15 +370,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__material_fieldset_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__material_fieldset_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__material_help_html__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__material_help_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__material_help_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__material_radios_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_section_html__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_section_html__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_section_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__material_section_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_html__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__material_card_html__);
@@ -377,15 +386,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_content_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__material_card_content_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_card_title_html__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_card_title_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__material_card_title_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_select_html__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_select_html__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_select_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_switch_html__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_switch_html__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_switch_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabs_html__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabs_html__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_tabs_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabarray_html__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabarray_html__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_tabarray_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_textarea_html__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_textarea_html__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_textarea_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_divider_html__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__material_divider_html__);
@@ -744,7 +753,7 @@ function sfCamelKeyFilter() {
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 /**
@@ -797,26 +806,16 @@ angular.module('schemaForm').directive('sfTypeParser', function() {
 
 
 /***/ }),
-/* 28 */,
 /* 29 */,
 /* 30 */,
 /* 31 */,
 /* 32 */,
-/* 33 */
+/* 33 */,
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(3);
 
-
-/***/ }),
-/* 34 */,
-/* 35 */
-/***/ (function(module, exports) {
-
-var path = '/material/radios-multi-column.html';
-var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\" layout=\"row\">{{form.title}}</label>\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout sf-messages>\n    <div ng-repeat=\"item in form.titleMap\" class=\"row\">\n      <div flex layout=\"row\" layout-padding layout-align=\"start center\" >\n        <md-radio-button flex ng-value=\"item.value\" class=\"md-primary\" >\n          <small>{{item.actionText}}</small>\n          <div>{{item.name}}</div>\n        </md-radio-button>\n        <div flex layout=\"column\">\n          <div flex ng-repeat=\"description in item.descriptionList track by $index\">{{description}}</div>\n        </div>\n        <div flex=\"none\" ng-if=\"item.recommended\" class=\"{{::form.badgeClass}}\">\n          {{::form.badgeText}}\n        </div>\n      </div>\n    </div>\n  </md-radio-group>\n</div>\n";
-window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
-module.exports = path;
 
 /***/ })
 /******/ ]);
