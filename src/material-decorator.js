@@ -13,6 +13,7 @@ import helpTemplate from './material/help.html';
 import numberTemplate from './material/default.html';
 import passwordTemplate from './material/default.html';
 import radiosTemplate from './material/radios.html';
+import radiosMultiColumnTemplate from './material/radios-multi-column.html';
 import radiosInlineTemplate from './material/radios-inline.html';
 import radiobuttonsTemplate from './material/radio-buttons.html';
 import sectionTemplate from './material/section.html';
@@ -81,6 +82,7 @@ function materialDecoratorConfig(
     // number: { template: defaultTemplate, builder: defaults.concat(numeric) },
     password: { template: defaultTemplate, builder: defaults },
     radios: { template: radiosTemplate, builder: defaults },
+    'radios-multi-column': { template: radiosMultiColumnTemplate, builder: defaults },
     'radios-inline': { template: radiosInlineTemplate, builder: defaults },
     radiobuttons: { template: radiobuttonsTemplate, builder: defaults },
     section: { template: sectionTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },

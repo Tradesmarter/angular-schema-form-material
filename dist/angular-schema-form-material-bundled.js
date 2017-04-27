@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Wed, 26 Apr 2017 12:34:42 GMT
+ * @date Thu, 27 Apr 2017 08:47:21 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -241,7 +241,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/radios.html';
-var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\"\n     ng-class=\"{'has-error': hasError(), 'has-success': hasSuccess()}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\" layout=\"row\">{{form.title}} {{form.titleMap | json}}</label>\n  <div>\n    <md-radio-group sf-field-model\n                    sf-changed=\"form\"\n                    ng-disabled=\"form.readonly\"\n                    name=\"{{form.key.join('.')}}\"\n                    sf-layout sf-messages>\n      <md-radio-button ng-repeat=\"item in form.titleMap\"\n                       ng-value=\"item.value\"\n                       class=\"{{::form.fieldHtmlClass}}\"\n                       sf-field-model=\"ng-class\"\n                       ng-class=\"{ active: item.value === $$value$$ }\">\n        <span ng-bind-html=\"item.name\"></span>\n      </md-radio-button>\n    </md-radio-group>\n  </div>\n</div>\n";
+var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\" layout=\"row\">{{form.title}} {{form.titleMap | json}}</label>\n  <div>\n    <md-radio-group sf-field-model\n                    sf-changed=\"form\"\n                    ng-disabled=\"form.readonly\"\n                    name=\"{{form.key.join('.')}}\"\n                    sf-layout sf-messages>\n      <md-radio-button ng-repeat=\"item in form.titleMap\"\n                       ng-value=\"item.value\"\n                       class=\"{{::form.fieldHtmlClass}}\"\n                       sf-field-model=\"ng-class\"\n                       ng-class=\"{ active: item.value === $$value$$ }\">\n        <span ng-bind-html=\"item.name\"></span>\n      </md-radio-button>\n    </md-radio-group>\n  </div>\n</div>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
@@ -363,33 +363,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__material_help_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__material_help_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__material_radios_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__material_radios_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_section_html__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_section_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__material_section_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_card_html__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_card_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__material_card_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_content_html__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_content_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__material_card_content_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_title_html__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__material_card_title_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__material_select_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_switch_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_tabs_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_tabarray_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_textarea_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_divider_html__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_divider_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_div_html__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_div_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__material_div_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_section_html__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__material_section_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__material_section_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_html__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__material_card_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__material_card_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_content_html__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__material_card_content_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__material_card_content_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_card_title_html__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__material_card_title_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__material_card_title_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_select_html__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_select_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_switch_html__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_switch_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabs_html__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_tabs_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabarray_html__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_tabarray_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_textarea_html__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_textarea_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_divider_html__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__material_divider_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__material_div_html__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__material_div_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24__material_div_html__);
 // ngtemplate-loader embeds the html on build
+
 
 
 
@@ -472,20 +475,21 @@ function materialDecoratorConfig(
     // number: { template: defaultTemplate, builder: defaults.concat(numeric) },
     password: { template: __WEBPACK_IMPORTED_MODULE_7__material_default_html___default.a, builder: defaults },
     radios: { template: __WEBPACK_IMPORTED_MODULE_10__material_radios_html___default.a, builder: defaults },
-    'radios-inline': { template: __WEBPACK_IMPORTED_MODULE_11__material_radios_inline_html___default.a, builder: defaults },
-    radiobuttons: { template: __WEBPACK_IMPORTED_MODULE_12__material_radio_buttons_html___default.a, builder: defaults },
-    section: { template: __WEBPACK_IMPORTED_MODULE_13__material_section_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
-    card: { template: __WEBPACK_IMPORTED_MODULE_14__material_card_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
-    'card-content': { template: __WEBPACK_IMPORTED_MODULE_15__material_card_content_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
-    'card-title': { template: __WEBPACK_IMPORTED_MODULE_16__material_card_title_html___default.a, builder: [ sfField, condition ] },
-    select: { template: __WEBPACK_IMPORTED_MODULE_17__material_select_html___default.a, builder: defaults.concat(sfOptions) },
+    'radios-multi-column': { template: __WEBPACK_IMPORTED_MODULE_11__material_radios_multi_column_html___default.a, builder: defaults },
+    'radios-inline': { template: __WEBPACK_IMPORTED_MODULE_12__material_radios_inline_html___default.a, builder: defaults },
+    radiobuttons: { template: __WEBPACK_IMPORTED_MODULE_13__material_radio_buttons_html___default.a, builder: defaults },
+    section: { template: __WEBPACK_IMPORTED_MODULE_14__material_section_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
+    card: { template: __WEBPACK_IMPORTED_MODULE_15__material_card_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
+    'card-content': { template: __WEBPACK_IMPORTED_MODULE_16__material_card_content_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
+    'card-title': { template: __WEBPACK_IMPORTED_MODULE_17__material_card_title_html___default.a, builder: [ sfField, condition ] },
+    select: { template: __WEBPACK_IMPORTED_MODULE_18__material_select_html___default.a, builder: defaults.concat(sfOptions) },
     submit: { template: __WEBPACK_IMPORTED_MODULE_4__material_submit_html___default.a, builder: defaults },
-    tabs: { template: __WEBPACK_IMPORTED_MODULE_19__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
-    tabarray: { template: __WEBPACK_IMPORTED_MODULE_20__material_tabarray_html___default.a, builder: arrays },
-    textarea: { template: __WEBPACK_IMPORTED_MODULE_21__material_textarea_html___default.a, builder: defaults.concat(textarea) },
-    'switch': { template: __WEBPACK_IMPORTED_MODULE_18__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
-    divider: { template: __WEBPACK_IMPORTED_MODULE_22__material_divider_html___default.a, builder: defaults },
-    div: { template: __WEBPACK_IMPORTED_MODULE_23__material_div_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] }
+    tabs: { template: __WEBPACK_IMPORTED_MODULE_20__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
+    tabarray: { template: __WEBPACK_IMPORTED_MODULE_21__material_tabarray_html___default.a, builder: arrays },
+    textarea: { template: __WEBPACK_IMPORTED_MODULE_22__material_textarea_html___default.a, builder: defaults.concat(textarea) },
+    'switch': { template: __WEBPACK_IMPORTED_MODULE_19__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
+    divider: { template: __WEBPACK_IMPORTED_MODULE_23__material_divider_html___default.a, builder: defaults },
+    div: { template: __WEBPACK_IMPORTED_MODULE_24__material_div_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] }
   });
 
   function sfLayout(args) {
@@ -938,6 +942,15 @@ module.exports = tv4;
 __webpack_require__(28);
 module.exports = __webpack_require__(3);
 
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+var path = '/material/radios-multi-column.html';
+var html = "<div class=\"form-group schema-form-radios {{::form.htmlClass}}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\" layout=\"row\">{{form.title}}</label>\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout sf-messages>\n    <div ng-repeat=\"item in form.titleMap\" class=\"row\">\n      <div flex layout=\"row\" layout-padding layout-align=\"start center\" >\n        <md-radio-button flex ng-value=\"item.value\" class=\"md-primary\" >\n          <small>{{item.actionText}}</small>\n          <div>{{item.name}}</div>\n        </md-radio-button>\n        <div flex layout=\"column\">\n          <div flex ng-repeat=\"description in item.descriptionList track by $index\">{{description}}</div>\n        </div>\n        <div flex=\"none\" ng-if=\"item.recommended\" class=\"{{::form.badgeClass}}\">\n          {{::form.badgeText}}\n        </div>\n      </div>\n    </div>\n  </md-radio-group>\n</div>\n";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
 
 /***/ })
 /******/ ]);
