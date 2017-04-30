@@ -9,16 +9,18 @@
       color: item.recommended ? 'default-accent-500' : 'default-background-500',
       borderLeftColor: item.recommended ? 'default-accent-500' : 'default-background-500-0.3'
     }" ng-class="{'md-whiteframe-10dp': item.recommended}">
-      <md-radio-button flex ng-value="item.value" class="md-primary">
-        <div class="md-caption">{{::item.actionText}}</div>
-        <div class="md-title">{{::item.name}}</div>
-      </md-radio-button>
-      <div flex layout="column" class="md-caption">
-        <div flex ng-repeat="description in item.descriptionList track by $index">{{::description}}</div>
-      </div>
-      <div flex="none" ng-if="::item.recommended" class="{{::form.badgeClass}} md-caption" md-colors="{background: 'default-accent-500'}">
-        {{::form.badgeText}}
-      </div>
+    <md-radio-button flex ng-value="item.value" class="md-primary">
+      <div class="md-caption">{{::item.actionText}}</div>
+      <div class="md-title">{{::item.name}}</div>
+    </md-radio-button>
+    <div flex layout="column" class="md-caption">
+      <ul>
+        <li flex ng-repeat="description in item.descriptionList track by $index">{{::description}}</li>
+      </ul>
     </div>
-  </md-radio-group>
+    <div flex="none" ng-if="::item.recommended" class="{{::form.badgeClass}} md-caption" md-colors="{background: 'default-accent-500'}">
+      {{::form.badgeText}}
+    </div>
+  </div>
+</md-radio-group>
 </div>
