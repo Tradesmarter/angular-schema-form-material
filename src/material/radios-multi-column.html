@@ -9,7 +9,7 @@
       color: item.recommended ? 'default-accent' : 'default-background-500',
       borderLeftColor: item.recommended ? 'default-accent' : 'default-background-500-0.3'
     }" ng-class="{'md-whiteframe-10dp': item.recommended}">
-    <md-radio-button flex ng-value="item.value" class="md-primary">
+    <md-radio-button flex ng-value="item.value">
       <div class="md-caption">{{::item.actionText}}</div>
       <div class="md-title">{{::item.name}}</div>
     </md-radio-button>
