@@ -1,4 +1,5 @@
 <md-input-container class="{{::form.htmlClass}}" sf-messages sf-layout sf-material-class="md-input-has-value" md-block>
+  <md-icon ng-show="::form.svgIconPosition === 'left'" md-svg-icon="{{::form.svgIcon}}"></md-icon>
   <label ng-show="showTitle()" for="{{::form.key|sfCamelKey}}">{{::form.title}}</label>
   <input sf-field-model
          ng-show="::form.key"
@@ -13,5 +14,6 @@
          schema-validate="form"
          name="{{::form.key|sfCamelKey}}"
          aria-describedby="{{::form.key|sfCamelKey}}Status" />
+  <md-icon class="right" ng-show="::form.svgIconPosition === 'right'" md-svg-icon="{{::form.svgIcon}}"></md-icon>
   <div class="md-hint" ng-show="::form.hint">{{::form.hint}}</div>
 </md-input-container>
