@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Sun, 28 May 2017 12:06:58 GMT
+ * @date Sun, 28 May 2017 12:25:46 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -79,7 +79,7 @@
 /***/ (function(module, exports) {
 
 var path = '/material/default.html';
-var html = "<md-input-container class=\"{{::form.htmlClass}}\" sf-messages sf-layout sf-material-class=\"md-input-has-value\" md-block>\n  <md-icon ng-show=\"::form.svgIconPosition === 'left'\" md-svg-icon=\"{{::form.svgIcon}}\"></md-icon>\n  <label ng-show=\"showTitle()\" for=\"{{::form.key|sfCamelKey}}\">{{::form.title}}</label>\n  <input sf-field-model\n         ng-show=\"::form.key\"\n         type=\"{{::form.type}}\"\n         step=\"any\"\n         sf-changed=\"form\"\n         placeholder=\"{{::form.placeholder}}\"\n         id=\"{{::form.key|sfCamelKey}}\"\n         ng-class=\"::form.fieldHtmlClass\"\n         sf-type-parser=\"form.schema\"\n         ng-disabled=\"::form.readonly\"\n         schema-validate=\"form\"\n         name=\"{{::form.key|sfCamelKey}}\"\n         aria-describedby=\"{{::form.key|sfCamelKey}}Status\" />\n  <md-icon class=\"right\" ng-show=\"::form.svgIconPosition === 'right'\" md-svg-icon=\"{{::form.svgIcon}}\"></md-icon>\n  <md-tooltip ng-show=\"::form.toolTip\">{{::form.toolTip}}</md-tooltip>\n  <div class=\"md-hint\" ng-show=\"::form.hint\">{{::form.hint}}</div>\n</md-input-container>\n";
+var html = "<md-input-container class=\"{{::form.htmlClass}}\" sf-messages sf-layout sf-material-class=\"md-input-has-value\" md-block>\n  <md-icon ng-show=\"::form.svgIconPosition === 'left'\" md-svg-icon=\"{{::form.svgIcon}}\"></md-icon>\n  <label ng-show=\"showTitle()\" for=\"{{::form.key|sfCamelKey}}\">{{::form.title}}</label>\n  <input sf-field-model\n         ng-show=\"::form.key\"\n         type=\"{{::form.type}}\"\n         step=\"any\"\n         sf-changed=\"form\"\n         placeholder=\"{{::form.placeholder}}\"\n         id=\"{{::form.key|sfCamelKey}}\"\n         ng-class=\"::form.fieldHtmlClass\"\n         sf-type-parser=\"form.schema\"\n         ng-disabled=\"::form.readonly\"\n         schema-validate=\"form\"\n         name=\"{{::form.key|sfCamelKey}}\"\n         aria-describedby=\"{{::form.key|sfCamelKey}}Status\" />\n  <md-icon class=\"right\" ng-show=\"::form.svgIconPosition === 'right'\" md-svg-icon=\"{{::form.svgIcon}}\"></md-icon>\n  <md-tooltip ng-if=\"::form.toolTip\" md-direction=\"{{::form.toolTipDirection}}\">{{::form.toolTip}}</md-tooltip>\n  <div class=\"md-hint\" ng-show=\"::form.hint\">{{::form.hint}}</div>\n</md-input-container>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 

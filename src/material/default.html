@@ -15,6 +15,6 @@
          name="{{::form.key|sfCamelKey}}"
          aria-describedby="{{::form.key|sfCamelKey}}Status" />
   <md-icon class="right" ng-show="::form.svgIconPosition === 'right'" md-svg-icon="{{::form.svgIcon}}"></md-icon>
-  <md-tooltip ng-show="::form.toolTip">{{::form.toolTip}}</md-tooltip>
+  <md-tooltip ng-if="::form.toolTip" md-direction="{{::form.toolTipDirection}}">{{::form.toolTip}}</md-tooltip>
   <div class="md-hint" ng-show="::form.hint">{{::form.hint}}</div>
 </md-input-container>
