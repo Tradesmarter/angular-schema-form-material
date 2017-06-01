@@ -8,10 +8,15 @@
                  aria-label="{{::opt.group}}">
       <md-option ng-repeat="(key, filtered) in form.getOptions(form, evalExpr) | filter: {group: opt.group} | orderBy:'name' as opts"
                  ng-value="::filtered.value"
-                 aria-label="{{::filtered.name}}">{{::filtered.name}}</md-option>
+                 aria-label="{{::filtered.name}}">
+                 {{::filtered.name}}
+      </md-option>
     </md-optgroup>
     <md-option   ng-if="!opt.group"
                  ng-value="::opt.value"
-                 ng-repeat-end>{{::opt.name}}</md-option>
+                 ng-repeat-end>
+                 <md-icon ng-show="::opt.svgIcon" md-svg-icon="{{::opt.svgIcon}}"></md-icon>
+                 <span>{{::opt.name}}</span>
+               </md-option>
   </md-select>
 </md-input-container>
