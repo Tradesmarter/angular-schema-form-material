@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Sun, 28 May 2017 12:25:46 GMT
+ * @date Thu, 01 Jun 2017 11:26:42 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -295,7 +295,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/tabs.html';
-var html = "<div sf-field-model class=\"schema-form-tabs {{::form.htmlClass}}\">\n  <md-tabs md-dynamic-height md-selected=\"selected\" md-autoselect ng-init=\"selected = 0\"></md-tabs>\n</div>\n";
+var html = "<div sf-field-model class=\"schema-form-tabs {{::form.htmlClass}}\">\n  <md-tabs md-dynamic-height md-border-bottom md-selected=\"selected\" md-autoselect ng-init=\"selected = 0\"></md-tabs>\n</div>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
