@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Sun, 15 Oct 2017 12:13:53 GMT
+ * @date Sun, 15 Oct 2017 12:17:46 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2017 JSON Schema Form
@@ -97,7 +97,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/submit.html';
-var html = "<md-button class=\"md-raised {{ form.style || 'md-primary' }} {{::form.fieldHtmlClass}}\"\n           type=\"{{::form.type}}\"\n           ng-disabled=\"form.readonly\"\n           aria-label=\"{{::form.title}}\">\n            <md-tooltip ng-if=\"::form.tip\">{{::form.tip}}</md-tooltip>\n            {{form.title}}\n</md-button>\n";
+var html = "<md-button class=\"md-raised {{ form.style || 'md-primary' }} {{::form.fieldHtmlClass}}\"\n           type=\"{{::form.type}}\"\n           ng-disabled=\"form.readonly\"\n           aria-label=\"{{::form.title}}\" sf-messages>\n  <md-tooltip ng-if=\"::form.tip\">{{::form.tip}}</md-tooltip>\n  {{::form.title}}\n</md-button>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
