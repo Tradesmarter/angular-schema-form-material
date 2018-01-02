@@ -7,10 +7,8 @@
     md-colors="{
       borderColor: 'default-accent',
     }" ng-class="{'md-whiteframe-10dp': item.recommended}">
-    <md-radio-button flex ng-value="item.value">{{::item.value}}
+    <md-radio-button flex="33" flex-gt-md="25" ng-value="item.value" layout="column">
       <md-icon ng-show="::item.svgIcon" md-svg-icon="{{::item.svgIcon}}"></md-icon>
-      <!-- <div class="md-caption">{{::item.actionText}}</div> -->
-      <!-- <div class="md-title">{{::item.name}}</div> -->
     </md-radio-button>
   </div>
 </md-radio-group>
