@@ -3,11 +3,11 @@
   <br />
   <br />
   <md-radio-group sf-field-model sf-changed="form" ng-disabled="form.readonly" name="{{form.key.join('.')}}" sf-layout sf-messages>
-    <div ng-repeat="item in form.titleMap" layout-align="center center" class="radio-buttons-card"
+    <div ng-repeat="item in form.titleMap" flex="33" flex-gt-md="25" layout-align="center center" class="radio-buttons-card"
     md-colors="{
-      borderColor: 'default-accent',
+      borderColor: item.active ? 'default-accent' : 'default-primary--0.5',
     }" ng-class="{'md-whiteframe-10dp': item.recommended}">
-    <md-radio-button flex="33" flex-gt-md="25" ng-value="item.value" layout="column">
+    <md-radio-button flex ng-value="item.value" layout="column">
       <md-icon ng-show="::item.svgIcon" md-svg-icon="{{::item.svgIcon}}"></md-icon>
     </md-radio-button>
   </div>
