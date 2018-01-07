@@ -18,8 +18,8 @@
       md-colors="{borderColor: item.active ? form.cardActiveBorderColor : form.cardBorderColor, color: item.active ? form.cardActiveBorderColor : form.cardBorderColor}"
       ng-class="{'md-whiteframe-17dp': item.active || isMouseOver}">
         <md-icon ng-show="::item.svgIcon" md-svg-icon="{{::item.svgIcon}}"></md-icon>
+        <span class="radio-card-label" ng-bind-html="item.name"></span>
       </md-radio-button>
-      <span class="md-caption" ng-bind-html="item.name"></span>
     </div>
   </md-radio-group>
 </div>
