@@ -12,15 +12,14 @@
       class="radio-buttons-card"
       ng-style="{zIndex: isMouseOver ? 1 : 0}">
       <md-radio-button
-      flex
       layout="column"
       layout-align="center center"
       ng-value="item.value"
-      md-colors="{borderColor: item.active ? form.cardActiveBorderColor : form.cardBorderColor}"
+      md-colors="{borderColor: item.active ? form.cardActiveBorderColor : form.cardBorderColor, color: item.active ? form.cardActiveBorderColor : form.cardBorderColor}"
       ng-class="{'md-whiteframe-17dp': item.active || isMouseOver}">
         <md-icon ng-show="::item.svgIcon" md-svg-icon="{{::item.svgIcon}}"></md-icon>
-        <span class="md-caption" ng-bind-html="item.name"></span>
       </md-radio-button>
+      <span class="md-caption" ng-bind-html="item.name"></span>
     </div>
   </md-radio-group>
 </div>
