@@ -1,0 +1,11 @@
+<md-menu class="form-group schema-form-menu {{::form.htmlClass}}" sf-layout>
+ <md-button class="{{::form.buttonClass}}" ng-click="$mdMenu.open($event)" aria-label="{{::form.title}}">
+   <md-icon ng-if="form.svgIcon" md-svg-icon="{{::form.svgIcon}}"></md-icon>
+   <span>{{::form.selected}}</span>
+ </md-button>
+ <md-menu-content>
+   <md-menu-item ng-repeat="item in form.titleMap">
+     <md-button ng-click="form.itemAction(item.value); selected = item;">{{::item.value}}</md-button>
+   </md-menu-item>
+ </md-menu-content>
+</md-menu>

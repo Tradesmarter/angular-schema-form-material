@@ -22,6 +22,7 @@ import cardTemplate from './material/card.html';
 import cardContentTemplate from './material/card-content.html';
 import cardTitleTemplate from './material/card-title.html';
 import selectTemplate from './material/select.html';
+import menuTemplate from './material/menu.html';
 import submitTemplate from './material/submit.html';
 import switchTemplate from './material/switch.html';
 import tabsTemplate from './material/tabs.html';
@@ -92,6 +93,7 @@ function materialDecoratorConfig(
     'card-content': { template: cardContentTemplate, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     'card-title': { template: cardTitleTemplate, builder: [ sfField, condition ] },
     select: { template: selectTemplate, builder: defaults.concat(sfOptions) },
+    menu: { template: menuTemplate, builder: defaults },
     submit: { template: submitTemplate, builder: defaults },
     tabs: { template: tabsTemplate, builder: [ sfField, mdTabs, condition ] },
     tabarray: { template: tabarrayTemplate, builder: arrays },

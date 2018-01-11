@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Mon, 08 Jan 2018 22:01:51 GMT
+ * @date Thu, 11 Jan 2018 11:21:47 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2018 JSON Schema Form
@@ -399,19 +399,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__material_card_title_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__material_card_title_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_select_html__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__material_select_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__material_select_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_switch_html__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_switch_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabs_html__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_tabs_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_tabarray_html__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_tabarray_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_textarea_html__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__material_textarea_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__material_divider_html__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24__material_divider_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__material_div_html__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__material_div_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25__material_div_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_menu_html__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__material_menu_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20__material_menu_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_switch_html__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__material_switch_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21__material_switch_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_tabs_html__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__material_tabs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22__material_tabs_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_tabarray_html__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__material_tabarray_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_23__material_tabarray_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__material_textarea_html__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__material_textarea_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_24__material_textarea_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__material_divider_html__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__material_divider_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25__material_divider_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__material_div_html__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__material_div_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_26__material_div_html__);
 // ngtemplate-loader embeds the html on build
+
 
 
 
@@ -505,13 +508,14 @@ function materialDecoratorConfig(
     'card-content': { template: __WEBPACK_IMPORTED_MODULE_17__material_card_content_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] },
     'card-title': { template: __WEBPACK_IMPORTED_MODULE_18__material_card_title_html___default.a, builder: [ sfField, condition ] },
     select: { template: __WEBPACK_IMPORTED_MODULE_19__material_select_html___default.a, builder: defaults.concat(sfOptions) },
+    menu: { template: __WEBPACK_IMPORTED_MODULE_20__material_menu_html___default.a, builder: defaults },
     submit: { template: __WEBPACK_IMPORTED_MODULE_4__material_submit_html___default.a, builder: defaults },
-    tabs: { template: __WEBPACK_IMPORTED_MODULE_21__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
-    tabarray: { template: __WEBPACK_IMPORTED_MODULE_22__material_tabarray_html___default.a, builder: arrays },
-    textarea: { template: __WEBPACK_IMPORTED_MODULE_23__material_textarea_html___default.a, builder: defaults.concat(textarea) },
-    'switch': { template: __WEBPACK_IMPORTED_MODULE_20__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
-    divider: { template: __WEBPACK_IMPORTED_MODULE_24__material_divider_html___default.a, builder: defaults },
-    div: { template: __WEBPACK_IMPORTED_MODULE_25__material_div_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] }
+    tabs: { template: __WEBPACK_IMPORTED_MODULE_22__material_tabs_html___default.a, builder: [ sfField, mdTabs, condition ] },
+    tabarray: { template: __WEBPACK_IMPORTED_MODULE_23__material_tabarray_html___default.a, builder: arrays },
+    textarea: { template: __WEBPACK_IMPORTED_MODULE_24__material_textarea_html___default.a, builder: defaults.concat(textarea) },
+    'switch': { template: __WEBPACK_IMPORTED_MODULE_21__material_switch_html___default.a, builder: defaults.concat(mdSwitch) },
+    divider: { template: __WEBPACK_IMPORTED_MODULE_25__material_divider_html___default.a, builder: defaults },
+    div: { template: __WEBPACK_IMPORTED_MODULE_26__material_div_html___default.a, builder: [ sfField, simpleTransclusion, condition, sfLayout ] }
   });
 
   function sfLayout(args) {
@@ -829,6 +833,16 @@ angular.module('schemaForm').directive('sfTypeParser', function() {
 
 module.exports = __webpack_require__(3);
 
+
+/***/ }),
+/* 36 */,
+/* 37 */
+/***/ (function(module, exports) {
+
+var path = '/material/menu.html';
+var html = "<md-menu class=\"form-group schema-form-menu {{::form.htmlClass}}\" sf-layout>\n <md-button class=\"{{::form.buttonClass}}\" ng-click=\"$mdMenu.open($event)\" aria-label=\"{{::form.title}}\">\n   <md-icon ng-if=\"form.svgIcon\" md-svg-icon=\"{{::form.svgIcon}}\"></md-icon>\n   <span>{{::form.selected}}</span>\n </md-button>\n <md-menu-content>\n   <md-menu-item ng-repeat=\"item in form.titleMap\">\n     <md-button ng-click=\"form.itemAction(item.value); selected = item;\">{{::item.value}}</md-button>\n   </md-menu-item>\n </md-menu-content>\n</md-menu>\n";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
 
 /***/ })
 /******/ ]);
