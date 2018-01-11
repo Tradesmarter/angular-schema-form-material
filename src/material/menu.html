@@ -1,7 +1,7 @@
 <md-menu class="form-group schema-form-menu {{::form.htmlClass}}" sf-layout>
  <md-button class="{{::form.buttonClass}}" ng-click="$mdMenu.open($event)" aria-label="{{::form.title}}">
    <span>{{::form.selected}}</span>
-   <md-icon ng-if="form.svgIcon" md-svg-icon="{{::form.svgIcon}}"></md-icon>
+   <md-icon>arrow_drop_down</md-icon>
  </md-button>
  <md-menu-content>
    <md-menu-item ng-repeat="item in form.titleMap">
