@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Thu, 11 Jan 2018 13:09:34 GMT
+ * @date Thu, 11 Jan 2018 13:12:30 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2018 JSON Schema Form
@@ -223,7 +223,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/menu.html';
-var html = "<md-menu class=\"form-group schema-form-menu {{::form.htmlClass}}\" sf-layout>\n <md-button class=\"{{::form.buttonClass}}\" ng-click=\"$mdMenu.open($event)\" aria-label=\"{{::form.title}}\">\n   <span>{{::form.selected}}</span>\n   <md-icon>arrow_drop_down</md-icon>\n </md-button>\n <md-menu-content>\n   <md-menu-item ng-repeat=\"item in form.titleMap\">\n     <md-button ng-click=\"form.itemAction(item.value); selected = item;\">{{::item.value}}</md-button>\n   </md-menu-item>\n </md-menu-content>\n</md-menu>\n";
+var html = "<md-menu class=\"form-group schema-form-menu {{::form.htmlClass}}\" sf-layout>\n <md-button class=\"{{::form.buttonClass}}\" ng-click=\"$mdMenu.open($event)\" aria-label=\"{{::form.title}}\">\n   <span>{{::form.selected}}</span>\n   <md-icon>arrow_drop_down</md-icon>\n </md-button>\n <md-menu-content>\n   <md-menu-item ng-repeat=\"item in form.titleMap\">\n     <md-button ng-click=\"form.itemAction(item.value); selected = item;\">{{::item.name}}</md-button>\n   </md-menu-item>\n </md-menu-content>\n</md-menu>\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
