@@ -1,8 +1,8 @@
 <div class="form-group schema-form-radios {{::form.htmlClass}}">
-  <label class="md-body-1" ng-show="showTitle()" aria-label="{{form.title}}">{{::form.title}}</label>
+  <label class="md-body-1" ng-show="showTitle()" aria-label="{{::form.title}}">{{::form.title}}</label>
   <br />
   <br />
-  <md-radio-group sf-field-model sf-changed="form" ng-disabled="form.readonly" name="{{form.key.join('.')}}" sf-layout sf-messages>
+  <md-radio-group sf-field-model sf-changed="form" ng-disabled="form.readonly" name="{{form.key.join('.')}}" sf-layout sf-messages schema-validate="form">
     <div ng-repeat="item in form.titleMap" flex layout="row" layout-padding layout-align="start center" class="radio-buttons-row"
     md-colors="{
       borderColor: 'default-background-500-0.3',
