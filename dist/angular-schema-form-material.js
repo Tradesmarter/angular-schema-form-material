@@ -1,10 +1,10 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Tue, 27 Feb 2018 15:05:15 GMT
+ * @date Thu, 14 Mar 2019 10:19:41 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
- * Copyright (c) 2014-2018 JSON Schema Form
+ * Copyright (c) 2014-2019 JSON Schema Form
  */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

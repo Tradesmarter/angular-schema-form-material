@@ -9,7 +9,8 @@
     "prepublish": "npm run build",
     "watch": "webpack --watch",
     "test": "echo \"Error: test not currently available\" && exit 1",
-    "test-me": "karma start --log-level debug"
+    "test-me": "karma start --log-level debug",
+    "start:dev": "webpack-dev-server"
   },
   "keywords": [
     "angular-schema-form-decorator"
@@ -20,9 +21,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "angular": ">= 1.2",
-    "angular-messages": "^1.5.0",
-    "angular-sanitize": ">= 1.2",
+    "angular": "1.7.8",
+    "angular-messages": "1.7.8",
+    "angular-sanitize": "1.7.8",
     "angular-schema-form": "^0.8.13",
     "tv4": "~1.0.15"
   },
