@@ -1,7 +1,7 @@
 /*!
  * angular-schema-form-material
  * @version 1.0.0-alpha.2
- * @date Thu, 14 Mar 2019 10:19:41 GMT
+ * @date Sun, 17 Mar 2019 11:44:26 GMT
  * @link https://github.com/json-schema-form/angular-schema-form-material
  * @license MIT
  * Copyright (c) 2014-2019 JSON Schema Form
@@ -241,7 +241,7 @@ module.exports = path;
 /***/ (function(module, exports) {
 
 var path = '/material/radios-cards.html';
-var html = "<div class=\"form-group schema-form-radios-cards {{::form.htmlClass}}\">\n  <label class=\"md-body-1\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\">{{::form.title}}</label>\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout sf-messages>\n    <div\n      ng-init=\"isMouseOver = false\"\n      ng-repeat=\"item in form.titleMap\"\n      ng-mouseover=\"isMouseOver = true\"\n      ng-mouseleave=\"isMouseOver = false\"\n      flex=\"33\"\n      flex-gt-sm=\"25\"\n      layout-align=\"center stretch\"\n      layout=\"row\"\n      class=\"radio-buttons-card\"\n      ng-style=\"{zIndex: isMouseOver ? 1 : 0}\">\n      <md-radio-button\n      layout=\"column\"\n      layout-align=\"center center\"\n      ng-value=\"item.value\"\n      md-colors=\"{borderColor: item.active ? form.cardActiveBorderColor : form.cardBorderColor, color: item.active ? form.cardActiveBorderColor : form.cardBorderColor, backgroundColor: form.cardBackgroundColor}\"\n      ng-class=\"{'md-whiteframe-17dp': item.active || isMouseOver}\">\n        <md-icon ng-show=\"::item.svgIcon\" md-svg-icon=\"{{::item.svgIcon}}\"></md-icon>\n        <div class=\"radio-card-label\" ng-bind-html=\"item.name\"></div>\n      </md-radio-button>\n    </div>\n  </md-radio-group>\n</div>\n";
+var html = "<div class=\"form-group schema-form-radios-cards {{::form.htmlClass}}\">\n  <label class=\"md-body-1\" ng-show=\"showTitle()\" aria-label=\"{{form.title}}\">{{::form.title}}</label>\n  <md-radio-group sf-field-model sf-changed=\"form\" ng-disabled=\"form.readonly\" name=\"{{form.key.join('.')}}\" sf-layout\n    sf-messages>\n    <div ng-init=\"isMouseOver = false\" ng-repeat=\"item in form.titleMap\" ng-mouseover=\"isMouseOver = true\"\n      ng-mouseleave=\"isMouseOver = false\" flex=\"33\" flex-gt-sm=\"25\" layout-align=\"center stretch\" layout=\"row\"\n      class=\"radio-buttons-card\" ng-style=\"{zIndex: isMouseOver ? 1 : 0}\">\n      <md-radio-button ng-value=\"item.value\"\n        md-colors=\"{borderColor: item.active ? form.cardActiveBorderColor : form.cardBorderColor, color: item.active ? form.cardActiveBorderColor : form.cardBorderColor, backgroundColor: form.cardBackgroundColor}\"\n        ng-class=\"{'md-whiteframe-17dp': item.active || isMouseOver}\">\n        <md-icon ng-show=\"::item.svgIcon\" md-svg-icon=\"{{::item.svgIcon}}\"></md-icon>\n        <div class=\"radio-card-label\" ng-bind-html=\"item.name\"></div>\n      </md-radio-button>\n    </div>\n  </md-radio-group>\n</div>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
